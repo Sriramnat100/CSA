@@ -1,0 +1,54 @@
+/*
+Solution for https://codingbat.com/prob/p151359
+Name: Sriram Natarajan
+*/
+
+public String withoutX2(String str) {
+  if (str.length() >= 2)
+  {
+    String t1 = str.substring(0,1);
+    String t2 = str.substring(1,2);
+    
+    if (t1.equals("x") && t2.equals("x"))
+    {
+      return str.substring(2);
+    }
+    
+    else if (t1.equals("x"))
+    {
+      return str.substring(1);
+    }
+    
+    else if (t2.equals("x"))
+    {
+      return str.substring(0,1) + str.substring(2);
+    }
+    
+    else
+    {
+      return str;
+    }
+    
+  }
+  else
+  {
+    if (str.length() >= 1) 
+    {
+      String mayb_x = str.substring(0,1);
+      
+      if (mayb_x.equals("x"))
+      {
+        return "";
+      }
+      else
+      {
+        return mayb_x;
+      }
+    }
+    
+    else
+    {
+      return str;
+    }
+  }
+}

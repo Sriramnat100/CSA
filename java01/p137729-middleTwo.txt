@@ -1,0 +1,11 @@
+/*
+Solution for https://codingbat.com/prob/p137729
+Name: Sriram Natarajan
+Partners' names: Sahil Puranaik
+*/
+
+public String middleTwo(String str) {
+  int length = str.length();
+  length = length / 2;
+  return str.substring(length-1,length+1);
+}

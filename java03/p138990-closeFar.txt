@@ -1,0 +1,27 @@
+/*
+Solution for https://codingbat.com/prob/p138990
+Name: Sriram Natarajan
+*/
+
+public boolean closeFar(int a, int b, int c) {
+  if (Math.abs(a-b) <= 1)
+  {
+    if (Math.abs(c-b) >=2 && Math.abs(c-a) >= 2)
+    {
+      return true;
+    }
+  }
+  
+  else if (Math.abs(a-c) <= 1)
+  {
+    if (Math.abs(b-a) >=2 && Math.abs(b-c) >= 2)
+    {
+      return true;
+    }
+  }
+  
+ 
+  return false;
+
+  
+}

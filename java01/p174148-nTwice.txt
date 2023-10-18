@@ -1,0 +1,9 @@
+/*
+Solution for https://codingbat.com/prob/p174148
+Name: Sriram Natarajan
+Partners' names: Sahil Puranaik
+*/
+public String nTwice(String str, int n) {
+  int length = str.length();
+  return str.substring(0,n) + str.substring(length-n);
+}

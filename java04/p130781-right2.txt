@@ -1,0 +1,17 @@
+/*
+Solution for https://codingbat.com/prob/p130781
+Name: Sriram Natarajan
+*/
+
+
+public String right2(String str) {
+  if (str.length() <= 2)
+  {
+    return str;
+  }
+  else
+  {
+    String x = str.substring(str.length()-2);
+    return x + str.substring(0,str.length()-2);
+  }
+}

@@ -1,0 +1,33 @@
+/*
+Solution for https://codingbat.com/prob/p139075
+Name: Sriram Natarajan
+*/
+
+public boolean hasBad(String str) {
+  
+  
+  if (str.length() >= 4)
+  {
+    String x1 = str.substring(0,3);
+    String x2 = str.substring(1,4);
+    if (x1.equals("bad") || x2.equals("bad"))
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+  else
+  {
+    if (str.equals("bad"))
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+}
